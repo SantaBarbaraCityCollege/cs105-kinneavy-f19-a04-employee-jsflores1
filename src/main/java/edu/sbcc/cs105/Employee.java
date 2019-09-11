@@ -43,6 +43,6 @@ public class Employee {
      * 
      */
     public void raiseSalary(double byPercent) {
-        currentSalary += currentSalary % byPercent;
+        currentSalary = currentSalary + (currentSalary * (byPercent / 100));
     }
 }
